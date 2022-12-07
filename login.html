@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="first.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <meta charset="utf-8">
+        <title>maMovie | ONA MOVIES & SERIES MTANDAONI</title>
+        
+    </head>
+    <body>
+        <section class="header">
+            
+            <!---------Nav bar Items------------>
+            <nav class="nav">
+                <div class="nav-links">
+                <ul>
+                    <a href="home.html"><button class="logo-btn">MaMOVIE</button></a>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#series">TV-Series</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li>
+                        <div class="search">
+                        <form action="#" class="search-bar">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ccc;"></i></button>
+                            <input type="text"
+                                placeholder="Keyword Search..."
+                                name="search">
+                        </form>
+                        </div>
+                    </li>
+                    <a href="#" class="user"><i class="fa-solid fa-user"></i><span>  Login/ Register </span></a>
+                </ul>
+            </div>    
+            </nav>
+
+            <div class="container-log">
+            <div class="card">
+                <div class="inner-box" id="card">
+                    <div class="card-front">
+                        <h2>Login</h2>
+                        <form>
+                            <input type="email" class="input-box" placeholder="Username" required>
+                            <input type="password" class="input-box" placeholder="************" required>
+                            <button type="submit" class="submit-btn">Submit</button>
+                            <input type="checkbox"><span style="color:rgb(240, 176, 57) ;">Remember Me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openRegister()">New User? Register</button>
+                        <a href="#newpass" style="cursor: pointer; ">Forgot Password</a>
+                    </div>
+                    <div class="card-back">
+                        <h2>Register</h2>
+                        <form>
+                            <input type="text" class="input-box" placeholder="User Name" required>
+                            <input type="email" class="input-box" placeholder="Email ID..." required>
+                            <input type="password" class="input-box" placeholder="************" required>
+                            <button type="submit" class="submit-btn">Submit</button>
+                            <input type="checkbox"><span style="color:rgb(236, 104, 104) ;">Remember Me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openLogin()">Already have an account</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <script>
+            var card = document.getElementById(card);
+
+            function openRegister(){
+                card.style.transform = "rotateY(-180deg)";
+            }
+
+            function openLogin(){
+                card.style.transform = "rotateY(0deg)";
+            }
+        </script>
+        
+    </body>
+ 
+</html>
