@@ -11,7 +11,26 @@
 
         <section>
             <div class="container" style="background-color: black;">
-                <img src="Images/blacklist.png" alt="">
+                <div class="mySlides fade">
+                    <img src="Images/blacklist.png" alt="">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="Images/spiderman.png" alt="">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="Images/orphan black.png" alt="">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="Images/DC Black Adam.jpg" alt="">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="Images/Top Gun.jpg" alt="">
+                    <div class="text">Caption Text</div>
+                </div>
                 <nav>
                     <div class="nav">
                         <a href="newo.html"><button class="logo-btn">MaMOVIE</button></a>
@@ -177,6 +196,14 @@
                 </div>
             </div>
             <div class="bx">
+                <img src="Images/Mandrake.jpg" >
+                <span class="quality">HD</span>
+                <div class="moviename">
+                    <strong>Mandrake</strong><br><br>
+                    <span>2022 . </span><span class="bord"> Movie</span>
+                </div>
+            </div>
+            <div class="bx">
                 <img src="Images/my name is leon.jpg" >
                 <span class="quality">HD</span>
                 <div class="moviename">
@@ -184,7 +211,103 @@
                     <span>2022 . </span><span class="bord"> Movie</span>
                 </div>
             </div>
+
+            <div class="bx">
+                <img src="Images/Spirited.jpg" >
+                <span class="quality">HD</span>
+                <div class="moviename">
+                    <strong>Spirited</strong><br><br>
+                    <span>2022 . </span><span class="bord"> Movie</span>
+                </div>
+            </div>
+
+            <div class="bx">
+                <img src="Images/Smile.jpg" >
+                <span class="quality">HD</span>
+                <div class="moviename">
+                    <strong>Smile</strong><br><br>
+                    <span>2022 . </span><span class="bord"> Movie</span>
+                </div>
+            </div>
+
+            <div class="bx">
+                <img src="Images/Call Jane.jpg" >
+                <span class="quality">HD</span>
+                <div class="moviename">
+                    <strong>Call Jane</strong><br><br>
+                    <span>2022 . </span><span class="bord"> Movie</span>
+                </div>
+            </div>
+
+            <div class="bx">
+                <img src="Images/The last Manhunt.jpg" >
+                <span class="quality">HD</span>
+                <div class="moviename">
+                    <strong>The Last Manhunt</strong><br><br>
+                    <span>2022 . </span><span class="bord"> Movie</span>
+                </div>
+            </div>
+
+            <div class="bx">
+                <img src="Images/A christmas Karen.jpg" >
+                <span class="quality">HD</span>
+                <div class="moviename">
+                    <strong>A Christmas Karen</strong><br><br>
+                    <span>2022 . </span><span class="bord"> Movie</span>
+                </div>
+            </div>
+
+            <div class="bx">
+                <img src="Images/Troll.jpg" >
+                <span class="quality">HD</span>
+                <div class="moviename">
+                    <strong>Troll</strong><br><br>
+                    <span>2022 . </span><span class="bord"> Movie</span>
+                </div>
+            </div>
+
+            <div class="bx">
+                <img src="Images/emancipation.jpg" >
+                <span class="quality">HD</span>
+                <div class="moviename">
+                    <strong>Emancipation</strong><br><br>
+                    <span>2022 . </span><span class="bord"> Movie</span>
+                </div>
+            </div>
+
+            <div class="bx">
+                <img src="Images/fall.jpg" >
+                <span class="quality">HD</span>
+                <div class="moviename">
+                    <strong>FALL</strong><br><br>
+                    <span>2022 . </span><span class="bord"> Movie</span>
+                </div>
+            </div>
+
+            
         </section>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
         
     </body>
 </html>
