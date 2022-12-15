@@ -4,23 +4,9 @@ html,body{
     background-image: linear-gradient(rgba(19, 27, 54, 0.548),rgba(4,9,30,0.7)),url(Images/nb.png);
   }
 
-  .logo-btn{
-    background-color: transparent;
-    font-family: 'Brush Script MT', cursive;
-    font-size: 35px;
-    height: 48spx;
-    width: 180px;
-    position:relative;
-    color: rgb(240, 176, 57);
-    border: none;
-  }
-  
-  .logo-btn:hover{
-    cursor: pointer;
-  }
-
   .container{
     width: 100%;
+    height: 50%;
   }
 
 .container img{
@@ -40,28 +26,70 @@ nav{
 }
 
 .nav ul {
-        list-style-type: none;
-        margin: 5px;
-        padding: 10px;
-        overflow: hidden;
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+    overflow: hidden;
     }
       
 .nav li{
-        float: left;
+    float: left;
+    padding: 0px 12px;
+    position: relative;
     }
       
 .nav li a{
-        display: flex;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+    display: flex;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
     }
       
 .nav li a:hover{
         cursor: pointer;
         color: rgb(240, 176, 57);
     }
+
+    .nav ul a::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #ddd55ede;
+        background-image: linear-gradient(to right, #ddd55ede, red);
+        transition: 0.25s ease-out;
+      }
+    
+      .nav ul a:hover::before{
+        width: 100%;
+        left: 0;
+        right: auto;
+      }
+    
+      .nav ul a:hover{
+        color: rgb(240, 176, 57);
+      }
+    
+      .fa::before{
+        content: "";
+      }
+
+    .logo-btn{
+        background-color: transparent;
+        font-family: 'Brush Script MT', cursive;
+        font-size: 35px;
+        height: 48spx;
+        width: 180px;
+        color: rgb(240, 176, 57);
+        border: none;
+      }
+      
+      .logo-btn:hover{
+        cursor: pointer;
+      }
 
 /*-------------Search---------------------------------------------------*/
 
