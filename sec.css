@@ -27,6 +27,14 @@ html,body{
   text-align: center;
 }
 
+.mySlides .content{
+  position: absolute;
+  color: white;
+  margin-top: 50px;
+  padding-left: 50px;
+  display: block;
+}
+
 nav{
     position: absolute;
     display: flex;
@@ -248,5 +256,5 @@ nav{
   
   /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+  .content .text {font-size: 11px}
 }
