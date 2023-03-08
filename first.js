@@ -1,7 +1,10 @@
-  //setTimeout (wakeUpUser, 5000);
+//Alert Message when you open Home page
+ //setTimeout (wakeUpUser, 5000);
         //function wakeUpUser(){
-            alert("Leave your thoughts here");
+            alert("Welcome to the best Free Movie Website");
 //}
+
+//Code for homepage movie sliders
 
 let slideIndex = 0;
 showSlides();
@@ -23,7 +26,7 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
-
+//code for login form flip card
 
     function openRegister(){
       card.style.transform = "rotateY(-180deg)";
